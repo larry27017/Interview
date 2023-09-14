@@ -15,7 +15,7 @@ interface IStorage {
 }
 
 /**
- * @description 将按字节存储的内存格式化
+ * @desc 将按字节存储的内存格式化
  * @param {number} size 内存容量字节
  * @param {number} decimal 小数位数
  * @returns
@@ -28,10 +28,10 @@ export function formatStorageNumberToObj (size: number, decimal: number = 0): IS
     unitIndex++
   }
   const roundedNumber = Number(size.toFixed(decimal))
-  return {
-    number: roundedNumber,
-    unit: units[unitIndex]
-  }
+  return { number: roundedNumber, unit: units[unitIndex] }
 }
-const result1 = formatStorageNumberToObj(1245, 2)
-console.log(result1)
+const result = formatStorageNumberToObj(1245, 2)
+
+if (result.unit === 'B') {
+  console.log(result.number)
+}

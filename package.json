@@ -6,8 +6,6 @@
   "scripts": {
     "build": "tsc -p tsconfig.json --outDir dist",
     "prepare": "husky install",
-    "lint": "eslint -c src/ .ts --fix",
-    "lint-fix": "lint --fix ./src --ext .ts,.js,.vue",
     "precommit": "lint-staged",
     "test": "jest"
   },
@@ -40,3 +38,4 @@
     "tslib": "^2.6.2"
   }
 }
+
