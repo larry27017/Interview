@@ -8,5 +8,9 @@
     "noUnusedParameters": true,
     "importHelpers": true,
     "noEmitHelpers": true
-  }
+  },
+  "include": [
+    "src",   // 这里添加你的项目中的源代码目录
+    ".eslintrc.js"  // 这里添加 .eslintrc.js 文件所在的目录
+  ]
 }
