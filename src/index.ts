@@ -16,7 +16,7 @@ interface IStorage {
 
 /**
  * @description 将按字节存储的内存格式化
- * @param {number}size 内存容量字节
+ * @param {number} size 内存容量字节
  * @param {number} decimal 小数位数
  * @returns
  */
@@ -33,3 +33,5 @@ export function formatStorageNumberToObj (size: number, decimal: number = 0): IS
     unit: units[unitIndex]
   }
 }
+const result1 = formatStorageNumberToObj(1245, 2)
+console.log(result1)
