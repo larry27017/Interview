@@ -32,6 +32,6 @@ export function formatStorageNumberToObj (size: number, decimal: number = 0): IS
 }
 const result = formatStorageNumberToObj(1245, 2)
 
-if (result.unit === 'B') {
+if (result.unit !== 'B') {
   console.log(result.number)
 }
