@@ -4,13 +4,17 @@
     "moduleResolution": "node",
     "target": "esnext",
     "module": "esnext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "importHelpers": true,
-    "noEmitHelpers": true
+    "noEmitHelpers": true,
   },
   "include": [
-    "src",   // 这里添加你的项目中的源代码目录
-    ".eslintrc.js"  // 这里添加 .eslintrc.js 文件所在的目录
+    "src", // 这里添加你的项目中的源代码目录
+    ".eslintrc.js",  // 这里添加 .eslintrc.js 文件所在的目录
+    "./"
   ]
 }
