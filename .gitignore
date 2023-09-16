@@ -1,0 +1,16 @@
+.history
+.DS_Store
+
+node_modules
+
+dist
+
+remote-config.json
+package-lock.json
+.code-workspace
+
+dev.log
+yarn-error.log
+
+.yarn/*
+.yarnrc.yml
