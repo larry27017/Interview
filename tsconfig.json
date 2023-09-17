@@ -4,7 +4,7 @@
     "moduleResolution": "node",
     "target": "esnext",
     "module": "esnext",
-    "resolveJsonModule": true,
+    // "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
